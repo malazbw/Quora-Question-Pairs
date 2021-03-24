@@ -7,6 +7,10 @@
 
 - Siamese Manhattan LSTM (MaLSTM) with help of - Siamese Recurrent Architectures for Learning Sentence Similarity paper with some modifciations.
 
+## Modeling
+<img width="352" alt="model" src="https://user-images.githubusercontent.com/14330105/112391461-3c841800-8cf8-11eb-9a0b-c278c824a7fc.png">
+
+
 ## LINKS :
  * Kaggle competition - https://www.kaggle.com/c/quora-question-pairs
  * Dataset - https://www.kaggle.com/quora/question-pairs-dataset

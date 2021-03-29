@@ -1,3 +1,6 @@
+"""
+@author: malazbw
+"""
 import os
 import sys
 import logging
@@ -6,21 +9,10 @@ from flask_cors import CORS
 import pandas as pd
 import numpy as np
 from quora_model import QuoraModel
-
-
-
-
 import tensorflow as tf
-
-
-
 
 # define the app
 app = Flask(__name__)
-
-
-
-
 
 # load the model
 model = QuoraModel()
@@ -49,8 +41,6 @@ def api():
     output_data = predict(input1, input2)
     response = jsonify(output_data)
     return response
-
-
 
 
 # HTTP Errors handlers

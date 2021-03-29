@@ -1,3 +1,7 @@
+"""
+@author: malazbw
+"""
+
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1" 
 import sys
@@ -29,9 +33,7 @@ def exponent_neg_manhattan_distance( left, right):
 
   return K.exp(-K.sum(K.abs(left-right), axis=1, keepdims=True))
 class QuoraModel:
-  
 
-    
    # default constructor
   def __init__(self):
     
@@ -103,7 +105,6 @@ class QuoraModel:
       q2 = pad_sequences(q2, int(60))
 
       return q1,q2
-
 
 
   def predict(self, q1, q2):

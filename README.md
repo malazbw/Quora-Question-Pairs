@@ -20,7 +20,7 @@
 
 ## RESULTS :
 
-loss: 0.0999 - accuracy: 0.8737 - val_loss: 0.1195 - val_accuracy: 0.8377
+loss: 0.0999 - accuracy: 0.8570  - val_loss: 0.1195 - val_accuracy: 0.8307
 
 
 

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+"""
+@author: malazbw
+"""
 # # Quora Question Pairs using MaLSTM 
 
 # In[1]:

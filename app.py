@@ -17,7 +17,7 @@ app = Flask(__name__)
 # load the model
 model = QuoraModel()
     
-@app.route('/login', methods=['POST','GET'])
+@app.route('/home_page', methods=['POST','GET'])
 def login():
 
     if request.method == "POST":
@@ -26,21 +26,7 @@ def login():
         output_data = model.predict(q1, q2)
         return f"<h1>{output_data}</h1>"
     else:
-        return render_template("login.html")
-
-# API route
-@app.route('/api', methods=['POST'])
-def api():
-    """API function
-
-    All model-specific logic to be defined in the get_model_api()
-    function
-    """
-    input1 = request.json["input1"]
-    input2 = request.json["input2"]
-    output_data = predict(input1, input2)
-    response = jsonify(output_data)
-    return response
+        return render_template("home_page.html")
 
 
 # HTTP Errors handlers
